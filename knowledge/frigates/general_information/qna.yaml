@@ -1,0 +1,60 @@
+version: 1
+task_description: 'Teach the model about concepts related to Navantia'
+created_by: benitomg
+domain: Navantia
+seed_examples:
+ - question: What is the maximum speed of the AWD Air Warfare Destroyer?
+   answer: |
+     +28 kt
+ - question: What are the main characteristics of the ALFA 3000?
+   answer: |
+     Length Overall 104.20 m 
+     Length Between Perpendiculars 93 m 
+     Maximum Breadth 14.40 m 
+     Depth to Main Deck 7.35 m 
+     Design Draught 4.32 m 
+     Maximum Speed  27 kt 
+     Range 5,000 nm (15 kt) 
+     Accommodation 102
+ - question: Tell me the weapons of the ALFA 4000
+   answer: |
+     2 x Surface-to-Surface Missile (SSM) Systems (2 x quadruple Launchers) 
+     2 x Surface-to-Air (SAM) Systems (16 cells VLS) 
+     1 x CIWS 
+     1 x 76 mm Main Gun 
+     2 x 40 mm Secondary Guns 
+     2 x 12.7 mm Machine Guns 
+     2 x Decoy Launcher Systems 
+     1 x EW/RECM 
+     2 x Triple Torpedo Launcher Systems
+ - question: How many frigates has Navantia developed in the last years?
+   answer: |
+     In the last 20 years Navantia has successfully developed 5 programs, including the current F-110 program for Spain, with a total of 17 ships.
+ - question: What is a digital twin?
+   answer: |
+     A virtual replica of the ship that constantly receives information from the vessel.
+ - question: What is the F-110 frigate?
+   answer: |
+     The F-110 is a multipurpose battleship that represents a substantial step forward towards the Smart Ship concept. The vessel integrates the best of industry 4.0 technologies, that will improve her construction, operation and life cycle management.
+ - question: What are the technologies that the F-110 integrates?
+   answer: |
+     The design of this new frigate includes advanced technological features, such as an integrated mast with different sensor and antenna solutions, a multi-mission space that expands the ship\'s capabilities in all defence segments and a new, more efficient and silent hybrid propulsion plant, providing the ship with great versatility.
+ - question: What is the integrated services system (ISS)?
+   answer: |
+     The Integrated Services System (ISS) is an initiative in collaboration with the Universities of Vigo and Coruna to develop an architecture based on the ship\'s 2,000 light points, a neural network that provides a significant reduction in the ship\'s wiring volume, while supporting the incorporation of the 4.0 technologies.
+ - question: How many jobs will the F-110 create?
+   answer: |
+     The F110 program will generate around 9,000 jobs between Navantia\'s own workforce and auxiliary direct employment, with further indirect jobs.
+ - question: What services does Navantia provide to the Norwegian Logistics Agency for Defense?
+   answer: |
+     Maintenance and development of the IPMS (Integrated Platform Management System) new features
+     Performance of obsolescence reports about Systems and their components
+     Spare parts supply and element repair
+     Technical assistance for scheduled maintenance tasks, especially in propulsion systems
+     Design and on-site implementation of new functionalities
+     Management of design databases
+document:
+ repo: https://github.com/BenitoMG/Nav_Knowledge.git
+ commit: 1b5540be43d8015bb76d2d07388feec8d318a88a
+ patterns:
+   - InstructLab_Nav.md
